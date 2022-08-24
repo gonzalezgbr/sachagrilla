@@ -11,8 +11,6 @@ from shutil import rmtree
 
 from setuptools import find_packages, setup, Command
 
-from sachagrilla import __version__
-
 
 # Package meta-data.
 NAME = 'sachagrilla'
@@ -21,7 +19,7 @@ URL = ''
 EMAIL = ''
 AUTHOR = 'GG'
 REQUIRES_PYTHON = '>=3.7.0'
-VERSION = __version__
+VERSION = '0.0.1'
 
 # What packages are required for this module to be executed?
 REQUIRED = [
