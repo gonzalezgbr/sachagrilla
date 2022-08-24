@@ -5,7 +5,7 @@ from datetime import date
 import sys
 
 from sachagrilla.layouts.pdflayout import PDFLayout
-from db.db_manager import DBManager
+from sachagrilla.db.db_manager import DBManager
 from utils import utils
 
 
