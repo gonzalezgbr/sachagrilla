@@ -1,0 +1,5 @@
+beautifulsoup4==4.11.1
+fpdf==1.7.2
+peewee==3.15.1
+requests==2.28.1
+setuptools==57.0.0

@@ -1,0 +1,8 @@
+# Include one file at the top
+include README.md
+include LICENSE
+include database.db
+
+# Include all files in a folder
+include docs/*
+include src/sachagrilla/data/grids/*
