@@ -6,7 +6,7 @@ import sys
 
 from sachagrilla.layouts.pdflayout import PDFLayout
 from sachagrilla.db.db_manager import DBManager
-from utils import utils
+from sachagrilla.utils import utils
 
 
 class Grid:
