@@ -107,7 +107,7 @@ class DBManager:
     @staticmethod
     def find_solution(grid_id: int):
         """Toma un grid_id y devuelve la solución para esa grilla."""
-        solution = Grid.select(Grid, Quote.content.alias('quote'),
+        solution = Grid.select(Grid, Quote.content.alias('quote'), Quote.author,
                                GridLine.row_nbr, Word.content.alias('word'), Clue.content.alias('clue'))\
             .join(Quote, on=(Grid.quote_id == Quote.id))\
             .join(GridLine, on=(GridLine.grid_id == Grid.id))\

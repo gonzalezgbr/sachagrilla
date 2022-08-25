@@ -109,7 +109,7 @@ class PDFLayout:
         words_reversed = [f"{grid_line['row_nbr']+1}: {grid_line['word'][::-1]}" for grid_line in self.solution]
         words_reversed_str = ' - '.join(words_reversed)
         self.pdf.multi_cell(0, self.pdf.font_size + 1, words_reversed_str, border=0)
-        quote_reversed = self.solution[0]['quote'][::-1]
+        quote_reversed = (self.solution[0]['quote'] + ' - ' + self.solution[0]['author'] + '.')[::-1]
         self.pdf.multi_cell(0, self.pdf.font_size + 1, f'"{quote_reversed}"', border=0)
 
     def print_grid(self, include_solution: bool) -> Path:
