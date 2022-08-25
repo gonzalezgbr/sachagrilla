@@ -16,7 +16,7 @@ class PDFLayout:
         self.pdf = FPDF()
         self.pdf.set_margins(left=15, top=10)
         self.pdf.set_auto_page_break(False, margin=1)
-        fonts_path = Path(__file__).parent.resolve().joinpath('fonts')
+        fonts_path = Path(__file__).parent.resolve().joinpath('../fonts')
         self.pdf.add_font('Ink Free', '', fonts_path / 'Inkfree.ttf', uni=True)
         self.pdf.add_font('Calibri Light', '', fonts_path / 'calibril.ttf', uni=True)
         self.output_path = Path(__file__).parent.resolve().joinpath('data/grids/')
