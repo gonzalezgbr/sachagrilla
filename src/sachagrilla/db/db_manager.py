@@ -119,7 +119,7 @@ class DBManager:
     @staticmethod
     def get_available_grids():
         """Devuelve los ids de las grillas existentes en la BD."""
-        available_grids = Grid.select(Grid.id)
+        available_grids = Grid.select(Grid.id).order_by(Grid.id)
         available_grids_str = ' - '.join([str(grid.id) for grid in available_grids])
         return available_grids_str
 
