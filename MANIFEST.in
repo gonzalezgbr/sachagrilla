@@ -1,7 +1,9 @@
 # Include one file at the top
 include README.md
 include LICENSE
-include database.db
+
+# Include DB
+include src/sachagrilla/sachagrilla.db
 
 # Include all files in a folder
 include docs/*

@@ -6,7 +6,7 @@ from peewee import SqliteDatabase, Model, CharField, DateTimeField, ForeignKeyFi
 
 
 def get_db():
-    db_path = Path(__file__).parent.resolve().joinpath('sachagrilla.db')
+    db_path = Path(__file__).parent.resolve().joinpath('../sachagrilla.db')
     db = SqliteDatabase(db_path, pragmas={'journal_mode': 'wal',
                                                    'cache_size': -1 * 64000,  # 64MB
                                                    'foreign_keys': 1,
