@@ -6,6 +6,7 @@ from typing import Dict
 
 from fpdf import FPDF
 
+from sachagrilla import MAIN_MODULE_BASEPATH
 from sachagrilla.utils.utils import get_all_syllables
 
 
@@ -16,10 +17,9 @@ class PDFLayout:
         self.pdf = FPDF()
         self.pdf.set_margins(left=15, top=10)
         self.pdf.set_auto_page_break(False, margin=1)
-        fonts_path = Path(__file__).parent.resolve().joinpath('../fonts')
-        self.pdf.add_font('Ink Free', '', fonts_path / 'Inkfree.ttf', uni=True)
-        self.pdf.add_font('Calibri Light', '', fonts_path / 'calibril.ttf', uni=True)
-        self.output_path = Path(__file__).parent.resolve().joinpath('data/grids/')
+        self.pdf.add_font('Ink Free', '', MAIN_MODULE_BASEPATH / 'fonts/Inkfree.ttf', uni=True)
+        self.pdf.add_font('Calibri Light', '', MAIN_MODULE_BASEPATH / 'fonts/calibril.ttf', uni=True)
+        self.output_path = MAIN_MODULE_BASEPATH / 'data/grids'
         self.solution = solution
         self.grid_id = solution[0]['id']
         self.x_clue_box = 0

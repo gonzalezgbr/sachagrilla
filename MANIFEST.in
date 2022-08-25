@@ -8,4 +8,4 @@ include src/sachagrilla/sachagrilla.db
 # Include all files in a folder
 include docs/*
 include src/sachagrilla/data/grids/*
-include src/fonts/*
+include src/sachagrilla/fonts/*

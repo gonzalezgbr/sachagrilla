@@ -1,12 +1,12 @@
 # models.py
 
-from pathlib import Path
-
 from peewee import SqliteDatabase, Model, CharField, DateTimeField, ForeignKeyField, IntegerField
+
+from sachagrilla import MAIN_MODULE_BASEPATH
 
 
 def get_db():
-    db_path = Path(__file__).parent.resolve().joinpath('../sachagrilla.db')
+    db_path = MAIN_MODULE_BASEPATH / 'sachagrilla.db'
     db = SqliteDatabase(db_path, pragmas={'journal_mode': 'wal',
                                                    'cache_size': -1 * 64000,  # 64MB
                                                    'foreign_keys': 1,

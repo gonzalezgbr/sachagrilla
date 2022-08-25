@@ -56,7 +56,7 @@ def main():
             print('WARNING Esta grilla estaba muy difícil... Intente nuevamente!', file=sys.stderr)
     else:
         args.func(args)
-    print('>>> GRACIAS POR USAR SACHAGRILLA! QUE NUNCA TE FALTEN LAS PALABRAS ✌(-‿-)✌')
+    print('>>> GRACIAS POR USAR SACHAGRILLA! QUE NUNCA TE FALTEN LAS PALABRAS ┑(^_^)┍')
 
 
 if __name__ == '__main__':
