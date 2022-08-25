@@ -24,7 +24,7 @@ class ScraperClarin:
     def __init__(self, next_grid_to_scrape: int):
         self.base_url = 'https://www.clarin.com/claringrilla/'
         self.next_grid_to_scrape = next_grid_to_scrape
-        self.scraped_data_path = Path('data/scraped/')
+        self.scraped_data_path = Path(__file__).parent.resolve().joinpath('data/scraped/')
         # self.scraped_data_path = Path('../data/scraped/')
 
     def scrape_data(self, nbr_pages: int = 20) -> int:

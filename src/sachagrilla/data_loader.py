@@ -10,7 +10,7 @@ class DataLoader:
     """Carga palabras y frases de los .csv scrapeados y los guarda en la BD."""
 
     def __init__(self):
-        self.scraped_data_path = Path('data/scraped')
+        self.scraped_data_path = Path(__file__).parent.resolve().joinpath('data/scraped')
         self.dbmanager = DBManager()
 
     def load_quotes(self):

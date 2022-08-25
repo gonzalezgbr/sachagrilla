@@ -1,8 +1,13 @@
+# models.py
+
+from pathlib import Path
+
 from peewee import SqliteDatabase, Model, CharField, DateTimeField, ForeignKeyField, IntegerField
 
 
 def get_db():
-    db = SqliteDatabase('sachagrilla.db', pragmas={'journal_mode': 'wal',
+    db_path = Path(__file__).parent.resolve().joinpath('sachagrilla.db')
+    db = SqliteDatabase(db_path, pragmas={'journal_mode': 'wal',
                                                    'cache_size': -1 * 64000,  # 64MB
                                                    'foreign_keys': 1,
                                                    'ignore_check_constraints': 0})
