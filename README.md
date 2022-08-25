@@ -51,7 +51,7 @@ Si no se quiere incluir la solución, omitir la opción `-s`. Se genera un pdf y
 ### Imprimir solución de una grilla existente
 
 ```shell
-sachagrilla solucion 2 
+sachagrilla solucion 10 
 ```
 
 Se debe indicar el número de grilla del cual se quiere la solución. 
@@ -67,7 +67,7 @@ Para recolectar más datos se descargan frases, palabras y su significado, de la
 Opcionalmente, se puede indicar cuantas páginas recolectar, por defecto se descargan 5.
 
 ```shell
-sachagrilla recolectar -c 10
+sachagrilla recolectar -c 2
 ```
 
 ![recolectar](docs/sachagrilla_recolectar.png)
@@ -75,7 +75,7 @@ sachagrilla recolectar -c 10
 
 Mirá que linda que queda una grilla generada!
 
-[SachaGrilla-1_2022-08-24.pdf](docs/SachaGrilla-1_2022-08-24.pdf)
+[SachaGrilla-1_2022-08-25.pdf](docs/SachaGrilla-1_2022-08-25.pdf)
 
 
 ## Release History
